@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | RhythmGame3</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 720px; height: 540px; background: #231F20"></canvas>
+    <script src="Build/Desktop.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Desktop.data.unityweb",
+        frameworkUrl: "Build/Desktop.framework.js.unityweb",
+        codeUrl: "Build/Desktop.wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "RhythmGame3",
+        productVersion: "0.1",
+      });
+    </script>
+  </body>
+</html>
